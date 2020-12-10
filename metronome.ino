@@ -1,14 +1,18 @@
+/**
+ * Project helps to runners improve cadence.
+ * 
+ * Buutons does not work now.
+ * 
+ * Cadence is set by hardCode (170)
+ */
 
+// ------------------------BETA----------------------//
 
-
-
-
-// -----------------------------------------BETA----------------------------------//
-
-#define MOTOR_PIN_A1 5
-#define MOTOR_PIN_A2 6
+#define MOTOR_PIN_A1 5 // Motor. It does not metter + or -
+#define MOTOR_PIN_A2 6 // Motor.
 
 int metronome = 170; // default speed
+
 //int buttonState = 0;
 //const int BUTTON_HIGH = 4;
 //const int BUTTON_LOW  = 3;
@@ -54,10 +58,10 @@ void set_motor_power(int power)
 /**
    delay(wait) got a half time of waiting.
 
-   full timeout for cadence - (60sec * 1000ms)/cadence
+   full timeout - (60sec * 1000ms)/cadence
 
    ex. cadence 180
-   timeout = 60000/180 = 333ms
+   timeout = 60000/180 = 334ms
 
    ex. cadence 170
    timeout = 60000/170 = 352ms
@@ -96,7 +100,7 @@ void vibro(int wait) {
 //
 //  } else if (metronome = 180) {
 //    Serial.println(metronome);
-//    vibro(166);
+//    vibro(168);
 //
 //  } else if (metronome = 185) {
 //    Serial.println(metronome);
